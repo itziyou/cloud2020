@@ -40,4 +40,10 @@ public class RateLimitController {
         return new CommonResult(200, "按客戶自定义", new Payment(2020L, "serial003"));
     }
 
+
+    @GetMapping("/hello")
+    public String hello() {
+        return "hello sentinel";
+    }
+
 }
